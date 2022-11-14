@@ -1,0 +1,87 @@
+.Container {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+.AllDiv {
+  border-radius: 4px;
+  border: solid 1px #777;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+.SubDiv {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+.Button__Close {
+  margin: 2vh auto;
+  width: 5vw;
+  min-width: 65px;
+  height: 4vh;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  color: lightgray;
+  border: solid 1px lightgray;
+}
+.Button__Close:hover {
+  cursor: pointer;
+}
+.GenreDiv {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.ItemDiv {
+  height: 100%;
+  width: 85%;
+  overflow-y: scroll;
+}
+.ItemDiv > div {
+  display: flex;
+  border-bottom: solid 0.5px gray;
+  padding: 1vh 0;
+}
+.ItemDiv > div :hover {
+  cursor: pointer;
+}
+.ItemDiv > div > div {
+  display: flex;
+  flex-direction: column;
+}
+.GenreButton {
+  color: lightgray;
+  border: none;
+  background-color: transparent;
+  padding: 0.5vh 0 0.5vh 0.5vw;
+  width: 100%;
+  text-align: left;
+}
+.GenreButton:hover {
+  cursor: pointer;
+}
+.GenreButton__Selected {
+  background-color: #555;
+  opacity: 0.7;
+}
+.ItemDiv label {
+  color: #999;
+  font-size: 0.9rem;
+}
+.ItemDiv label:first-child {
+  color: lightgray;
+  font-weight: bold;
+}
+.ItemDiv img {
+  height: 18vh;
+}

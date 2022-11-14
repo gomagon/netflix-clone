@@ -1,0 +1,18 @@
+.AreaDiv {
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+.LastDiv {
+  position: relative;
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+.BlackDiv {
+  position: absolute;
+  top:0; right:0;
+  z-index: 10;
+  height: 100%;
+  background-color: black;
+}

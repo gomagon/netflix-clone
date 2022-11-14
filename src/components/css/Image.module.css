@@ -1,0 +1,31 @@
+.Div {
+  position: relative;
+  height: 20vh;
+}
+.TitleSpan {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  position: absolute;
+  top: 9%; left: 9%;
+  z-index: 10;
+  color: white;
+}
+.Img {
+  position: absolute;
+  top: 5%; left: 5%;
+  height: 90%;
+  z-index: 2;
+  margin: 0 0.3vw;
+  transition: all 0.3s;
+}
+.Div:hover .Img {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: solid 0.3vw lightgray;
+  z-index: 3;
+}
+.Div:hover .TitleSpan {
+  visibility: visible;
+  opacity: 1;
+}

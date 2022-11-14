@@ -1,0 +1,34 @@
+.Container {
+  margin: 0;
+  padding: 0.8rem;
+  position: fixed;
+  top:0; left:0;
+  height: 5%;
+  width: 100%;
+  transition: 0.3s all;
+  z-index: 100;
+  display: flex;
+}
+.Container__Hide {
+  opacity: 0.3;
+}
+.Container span {
+  font-size: 1.5rem;
+  color: red;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.Button__Search {
+  width: 5vw;
+  margin-left: auto;
+  margin-right: 2vw;
+  min-width: 65px;
+  height: 4vh;
+  border-radius: 0.3rem;
+  background-color: black;
+  color: lightgray;
+  border: solid 1px lightgray;
+}
+.Button__Search:hover {
+  cursor: pointer;
+}

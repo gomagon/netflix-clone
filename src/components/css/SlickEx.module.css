@@ -1,0 +1,21 @@
+.Slick {
+  margin: 0 auto;
+  width: 95%;
+  height: 20vh;
+}
+.Slick__1 {
+  width: 20%;
+  height: 20vh;
+}
+.Slick__2 {
+  width: 40%;
+  height: 20vh;
+}
+.Slick__3 {
+  width: 60%;
+  height: 20vh;
+}
+.Slick__4 {
+  width: 80%;
+  height: 20vh;
+}

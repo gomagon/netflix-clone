@@ -1,0 +1,91 @@
+
+.Container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.LeftDiv {
+  width: 30%;
+  position: relative;
+}
+.InfoDiv {
+  margin: 1.5rem 0 1rem 0;
+}
+.InfoSubDiv {
+  display: flex;
+  vertical-align: center;
+}
+.InfoSubDiv span {
+  margin-top: -0.2rem;
+  margin-left: 0.5rem;
+}
+.DescDiv {
+  color: #dddddd;
+  position: absolute;
+  top:18vh; left:5vw;
+  z-index: 10;
+  width: 36vw;
+  display: flex;
+  flex-direction: column;
+}
+.Button__Add {
+  width: 5vw;
+  min-width: 65px;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: blueviolet;
+  background: #39ff14;
+}
+.Button__Add:hover {
+  cursor: pointer;
+}
+.Button__Delete {
+  width: 5vw;
+  min-width: 65px;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: black;
+  color: lightgray;
+  border: solid 1px lightgray;
+}
+.Button__Delete:hover {
+  cursor: pointer;
+}
+.TitleSpan {
+  font-weight: bold;
+  word-wrap: break-word;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.OverveiwSpan {
+  width: 100%;
+  font-size: 1rem;
+  word-wrap: break-word;
+  color: gray;
+}
+.MovieDiv {
+  height: 80vh;
+  width: 70%;
+  position: relative;
+  animation: SlideIn 0.6s;
+}
+.MovieDiv__Black {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0; left:0;
+  background: linear-gradient(90deg, black 0%, transparent 25%);
+}
+@keyframes SlideIn {
+  0% {
+    opacity: 0;/*初期状態では透明に*/
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
