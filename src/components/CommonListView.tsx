@@ -29,6 +29,7 @@ export const CommonListView: React.FC<propsType> = (props: propsType) => {
       props.category,
       props.rdxSetSlice
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -30,6 +30,7 @@ export const Home: React.FC = () => {
   useEffect(() => {
     getConfig();
     getGenres();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
